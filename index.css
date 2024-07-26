@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --softOrange: hsl(35, 77%, 62%);
+    --softRed: hsl(5, 85%, 63%);
+    --offWhite: hsl(36, 100%, 99%);
+    --grayishBlue: hsl(233, 8%, 79%);
+    --darkGrayishBlue: hsl(236, 13%, 42%);
+    --veryDarkBlue: hsl(240, 100%, 5%);
+    --montserrat: "Montserrat";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+}
+
+.navLinks {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    align-items: center;
+}
+
+a {
+    text-decoration: solid;
+    font-family: var(--montserrat);
+    color: var(--veryDarkBlue);
+}
+
+a:hover {
+    color: var(--softRed);
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    padding-left: 6rem;
+    width: 48rem;
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    padding-left: 6rem;
+    font-family: var(--montserrat);
+}
+
+.intro h1 {
+    font-weight: 800;
+    font-size: 40px;
+    width: 300px;
+}
+
+.intro p {
+    font-size: 15px;
+    text-align: start;
+    line-height: 1.5rem;
+    padding-top: 1rem;
+}
+
+#intro-button {
+    margin-top: 0.5rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    background-color: var(--softRed);
+    width:12rem;
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#intro-button:hover {
+    background-color: var(--veryDarkBlue);
+    color: var(--offWhite);
+    cursor: pointer;
+}
+
+#right {
+    background-color: var(--veryDarkBlue);
+    margin-right: 6rem;
+    font-family: var(--montserrat);
+    padding: 0 1rem;
+}
+
+#right h3 {
+    font-size: xx-large;
+    font-weight: 700;
+    color: var(--softOrange);
+}
+
+.first-container, .second-container {
+    border-bottom: 0.5px solid;
+    border-color: var(--darkGrayishBlue);
+    padding-bottom: 0.5rem;
+}
+
+#right h4 {
+    font-size: large;
+    color: var(--offWhite);
+}
+
+#right h4:hover {
+    color: var(--softOrange);
+    cursor: pointer;
+}
+
+#right p {
+    font-size: 15px;
+    color: var(--grayishBlue);
+    
+}
+
+#news-section {
+    margin: 4rem 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.first, .second, .third {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+    
+}
+
+#news-section img {
+    width: 5rem;
+    height: 7rem;
+}
+
+.update1, .update2, .update3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+    font-family: var(--montserrat);
+    
+}
+
+#news-section h3 {
+    color: var(--softRed);
+    font-family: var(--montserrat);
+    font-weight: 700;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: xx-large;
+}
+
+#news-section h4 {
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#news-section h4:hover {
+    color: var(--softRed);
+    cursor: pointer;
+}
+
+#news-section p {
+    margin-top: -0.5rem;
+    line-height: 1.5rem;
+    font-size: 15px;
+}
+
+/*===========Mobile===========*/
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding-left: 1rem;
+        position: relative;
+    }
+
+    
+
+    .navLinks {
+        position: absolute;
+        left: 15rem;
+        top: 3.5rem;
+        padding-top: 6rem;
+        height: 500px;
+        width: 20rem;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 2rem;
+        font-weight: 500;
+        color: var(--veryDarkBlue);
+        background-color: white;
+        
+    }
+
+    #header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+        display: inline-block;
+    }
+
+    #open {
+        margin-top: 1rem;
+        display: inline-block;
+    }
+
+    #close {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        width: 30rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-content: start;
+        align-items: start;
+        padding-left: 1rem;
+    }
+
+    .intro h1 {
+        width: 350px;
+        margin-bottom: 0;
+    }
+
+    .intro p {
+        padding-top: 1rem;
+        margin-top: 0;
+    }
+
+    #right {
+        margin-top: 2rem;
+        width: 30rem;
+    }
+
+    #news-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-left: 1rem;
+    }
+
+    #news-section h3 {
+        font-size: 25px;
+        margin-top: -0.2rem;
+    }
+
+    #news-section h4 {
+        font-size: 20px;
+    }
+
+    #news-section p {
+        font-size: 15px;
+    }
+}
