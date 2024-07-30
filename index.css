@@ -203,8 +203,6 @@ a:hover {
         position: relative;
     }
 
-    
-
     .navLinks {
         position: absolute;
         left: 15rem;
@@ -269,8 +267,8 @@ a:hover {
     }
 
     .intro h1 {
-        width: auto;
-        font-size: 54px;
+        width: 22rem;
+        font-size: 44px;
         margin-bottom: 0;
     }
 
@@ -278,23 +276,24 @@ a:hover {
         padding-top: 1rem;
         margin-top: 0;
         width: auto;
-        font-size: 18px
+        font-size: 15px
     }
 
     #intro-button {
         margin-top: 0.5rem;
-        padding: 1rem 4rem;
+        padding: 1rem 3rem;
         border: none;
         background-color: var(--softRed);
         width:auto;
         font-family: var(--montserrat);
         font-weight: 700;
-        font-size: 18px;
+        font-size: 15px;
     }
 
     #right {
         margin-top: 2rem;
         width: 28rem;
+        margin-left: 1rem;
     }
 
     #news-section {
