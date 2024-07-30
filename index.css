@@ -205,7 +205,7 @@ a:hover {
         top: 3.5rem;
         padding-top: 6rem;
         height: 500px;
-        width: 20rem;
+        width: 15rem;
         flex-direction: column;
         justify-content: start;
         align-items: start;
@@ -220,10 +220,12 @@ a:hover {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: auto;
     }
 
     .menu {
         display: inline-block;
+        padding-right: 1.5rem;
     }
 
     #open {
@@ -261,18 +263,32 @@ a:hover {
     }
 
     .intro h1 {
-        width: 350px;
+        width: auto;
+        font-size: 54px;
         margin-bottom: 0;
     }
 
     .intro p {
         padding-top: 1rem;
         margin-top: 0;
+        width: auto;
+        font-size: 18px
+    }
+
+    #intro-button {
+        margin-top: 0.5rem;
+        padding: 1rem 4rem;
+        border: none;
+        background-color: var(--softRed);
+        width:auto;
+        font-family: var(--montserrat);
+        font-weight: 700;
+        font-size: 18px;
     }
 
     #right {
         margin-top: 2rem;
-        width: 30rem;
+        width: 28rem;
     }
 
     #news-section {
@@ -280,6 +296,7 @@ a:hover {
         flex-direction: column;
         gap: 2rem;
         margin-left: 1rem;
+        width: 26rem;
     }
 
     #news-section h3 {
