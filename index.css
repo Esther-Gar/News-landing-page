@@ -199,7 +199,7 @@ a:hover {
         min-width: 375px;
     }
     .navbar {
-        padding-left: 1rem;
+        padding: 3rem 1rem;
         position: relative;
         width: auto;
     }
