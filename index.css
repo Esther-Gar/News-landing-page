@@ -207,11 +207,11 @@ a:hover {
 
     .navLinks {
         position: absolute;
-        left: 14rem;
-        top: 3.5rem;
+        left: 10rem;
+        top: 0;
         padding-top: 6rem;
-        height: 500px;
-        width: 15rem;
+        height: 800px;
+        width: 18rem;
         flex-direction: column;
         justify-content: start;
         align-items: start;
@@ -219,7 +219,7 @@ a:hover {
         font-weight: 500;
         color: var(--veryDarkBlue);
         background-color: white;
-        
+        z-index: 1;
     }
 
     #header-container {
@@ -232,6 +232,8 @@ a:hover {
     .menu {
         display: inline-block;
         padding-right: 1rem;
+        position: relative;
+        z-index: 2;
     }
 
     #open {
