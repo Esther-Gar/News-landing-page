@@ -295,7 +295,7 @@ a:hover {
 
     #right {
         margin-top: 2rem;
-        width: auto;
+        width: 22rem;
         margin-left: 1rem;
     }
 
@@ -304,7 +304,7 @@ a:hover {
         flex-direction: column;
         gap: 2rem;
         margin-left: 1rem;
-        width: auto;
+        width: 20rem;
     }
 
     #news-section h3 {
