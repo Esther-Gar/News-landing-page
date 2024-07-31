@@ -197,6 +197,7 @@ a:hover {
         margin: 0;
         padding: 0;
         min-width: 375px;
+        overflow-x: hidden;
     }
     .navbar {
         padding: 3rem 1rem;
@@ -248,7 +249,8 @@ a:hover {
 
     .mobile {
         display: block;
-        width: 30rem;
+        width: auto;
+        height: 20rem;
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -268,8 +270,8 @@ a:hover {
     }
 
     .intro h1 {
-        width: 22rem;
-        font-size: 44px;
+        width: 20rem;
+        font-size: 40px;
         margin-bottom: 0;
     }
 
@@ -302,7 +304,7 @@ a:hover {
         flex-direction: column;
         gap: 2rem;
         margin-left: 1rem;
-        width: 26rem;
+        width: auto;
     }
 
     #news-section h3 {
